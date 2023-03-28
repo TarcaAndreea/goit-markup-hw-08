@@ -191,14 +191,16 @@
     &__container {
       display: flex;
       flex-wrap: nowrap;
-      justify-content: inherit;
+      justify-content: space-evenly;
+      column-gap: 0px;
+      row-gap: 0px;
     }
     &__address {
       padding-right: 0px;
     }
   }
   .footer-form {
-    top: 0px;
+    display: flex;
     &__button {
       display: flex;
       align-items: center;
