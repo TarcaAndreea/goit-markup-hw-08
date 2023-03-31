@@ -20,7 +20,6 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 360px;
   }
   &__button {
     font-family: "Roboto";
@@ -44,6 +43,10 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../Images/background-T-768.jpg);
+    &__title {
+      padding-left: 204px;
+      padding-right: 204px;
+    }
     &__button {
       margin-left: 268px;
     }
@@ -61,7 +64,8 @@
     &__title {
       font-size: 44px;
       line-height: 60px;
-      width: 696px;
+      padding-left: 252px;
+      padding-right: 252px;
     }
     &__button {
       margin-left: 480px;

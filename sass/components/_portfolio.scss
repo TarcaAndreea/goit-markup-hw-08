@@ -88,8 +88,8 @@ main {
   }
   &__item {
     position: absolute;
-    width: 370px;
-    height: 294px;
+    width: 450px;
+    height: 100%;
     align-content: center;
     background: rgba(33, 150, 243, 0.9);
     top: 0;
@@ -127,14 +127,22 @@ main {
       justify-content: center;
     }
   }
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+  }
   .grid--portfolio {
     list-style: none;
     display: flex;
     gap: 26px;
-    padding: 0px 15px 60px 15px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+}
+.overlay {
+  &__item {
+    width: 354px;
+    height: 294px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -157,5 +165,15 @@ main {
     display: flex;
     gap: 30px;
     padding: 0 0 94px;
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
+}
+.overlay {
+  &__item {
+    width: 370px;
+    height: 294px;
+  }
+  .portfolio {
+    flex-direction: column;
   }
 }
